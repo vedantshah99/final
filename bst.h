@@ -12,8 +12,14 @@ class bst {
 
  public:
     
-    // DO NOT CHANGE THE GIVEN PUBLIC OR PRIVATE METHODS
+    // YOU MAY NOT CHANGE THE GIVEN PUBLIC OR PRIVATE METHODS, BUT YOU CAN ADD HELPER PRIVATE METHODS
+    
+    // TO DO: Implement a parametrized constructor that constructs a bst from the elements in the given vector v
+    // You must insert the element of v into the bst in the order that they appear in the vector
+    // Insert the first element in v, then the second, and so on
     bst(vector<int>&v); 
+	
+    //Implement the destructor
     ~bst();
      
     int countLeaves() const { return countLeaves(root); }
@@ -23,7 +29,7 @@ class bst {
     void outputInOrder(vector<int>& output) const {return outputInOrder(root, output);};
     bool insert(int key);
 
-    // IMPLEMENT THE FOLLOWING METHOD(s): both public and helper functions
+    // TO DO: IMPLEMENT THE FOLLOWING PUBLIC METHOD:
     
     //Deletes the subtree in the BST that is rooted at the given key value
     void deleteSubtree(int key); 
@@ -37,15 +43,22 @@ class bst {
     };
 
     bstNode *root;
-    // returns the number of leaf nodes
+	
+    // TO DO: IMPLEMENT THE FOLLOWING PRIVATE METHODs:
+	
+    // countLeaves() returns the number of leaf nodes
     int countLeaves(bstNode *root) const;
-    // returns the number of parents with two children
+	
+    // countParentsWithTwoChildren() returns the number of parents with two children
     int countParentsWithTwoChildren(bstNode *root) const;
-    // returns the height of the bst. Note height of an empty bst is -1
+	
+    // height() returns the height of the bst. Note height of an empty bst is -1
     int height(bstNode *root) const;
-    //stores the result of a preorder traversal in the vector output
+	
+    //outputPreOrder() stores the result of a preorder traversal in the vector output
     void outputPreOrder(bstNode *root, vector<int>& output) const;
-    //stores the result of an inorder traversal in the vector output
+	
+    //outputInOrder() stores the result of an inorder traversal in the vector output
     void outputInOrder(bstNode *root, vector<int>& output) const;
 
     //METHODS ALREADY IMPLEMENTED
