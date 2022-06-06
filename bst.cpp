@@ -64,16 +64,16 @@ bool bst::insert(int value, bstNode *n) {
 void bst::deleteSubtree(int key){
 
 }
-int bst::countLeaves(bstNode *root) const{
+int bst::countLeaves(bstNode *n) const{
     return 0;
 }
-int bst::countParentsWithTwoChildren(bstNode *root) const{
+int bst::countParentsWithTwoChildren(bstNode *n) const{
     return 0;
 }
-int bst::height(bstNode *root) const{
+int bst::height(bstNode *n) const{
     return 0;
 }
-void bst::outputPreOrder(bstNode *root, vector<int>& output) const{
+void bst::outputPreOrder(bstNode *n, vector<int>& output) const{
     return;
 }
 void bst::outputInOrder(bstNode *n, vector<int>& output) const{
