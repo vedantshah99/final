@@ -32,6 +32,7 @@ class bst {
     // TO DO: IMPLEMENT THE FOLLOWING PUBLIC AND PRIVATE METHODS:
     
     //deleteSubtree Deletes the subtree in the BST that is rooted at the given key value
+    //In other words it should delete the node with the given key and ALL its children.
     void deleteSubtree(int key); 
     
  private:
