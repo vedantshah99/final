@@ -47,20 +47,20 @@ class bst {
     // TO DO: IMPLEMENT THE FOLLOWING PRIVATE METHODS:
 	
     // countLeaves() returns the number of leaf nodes
-    int countLeaves(bstNode *root) const;
+    int countLeaves(bstNode *n) const;
 	
     // countParentsWithTwoChildren() returns the number of parents with two children
-    int countParentsWithTwoChildren(bstNode *root) const;
+    int countParentsWithTwoChildren(bstNode *n) const;
 	
     // height() returns the height of the bst. Note height of an empty bst is -1.
     // the height of a one node tree is 0
-    int height(bstNode *root) const;
+    int height(bstNode *n) const;
 	
     //outputPreOrder() stores the result of a preorder traversal in the vector output
-    void outputPreOrder(bstNode *root, vector<int>& output) const;
+    void outputPreOrder(bstNode *n, vector<int>& output) const;
 	
     //outputInOrder() stores the result of an inorder traversal in the vector output
-    void outputInOrder(bstNode *root, vector<int>& output) const;
+    void outputInOrder(bstNode *n, vector<int>& output) const;
 
     //METHODS ALREADY IMPLEMENTED
     bstNode* getNodeFor(int value, bstNode* n) const;
