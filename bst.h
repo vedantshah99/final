@@ -19,7 +19,7 @@ class bst {
     // Insert the first element in v, then the second, and so on
     bst(vector<int>&v); 
 	
-    //Implement the destructor
+    //TO DO: Implement the destructor
     ~bst();
      
     int countLeaves() const { return countLeaves(root); }
@@ -29,9 +29,9 @@ class bst {
     void outputInOrder(vector<int>& output) const {return outputInOrder(root, output);};
     bool insert(int key);
 
-    // TO DO: IMPLEMENT THE FOLLOWING PUBLIC METHOD:
+    // TO DO: IMPLEMENT THE FOLLOWING PUBLIC AND PRIVATE METHODS:
     
-    //Deletes the subtree in the BST that is rooted at the given key value
+    //deleteSubtree Deletes the subtree in the BST that is rooted at the given key value
     void deleteSubtree(int key); 
     
  private:
@@ -44,7 +44,7 @@ class bst {
 
     bstNode *root;
 	
-    // TO DO: IMPLEMENT THE FOLLOWING PRIVATE METHODs:
+    // TO DO: IMPLEMENT THE FOLLOWING PRIVATE METHODS:
 	
     // countLeaves() returns the number of leaf nodes
     int countLeaves(bstNode *root) const;
@@ -52,7 +52,8 @@ class bst {
     // countParentsWithTwoChildren() returns the number of parents with two children
     int countParentsWithTwoChildren(bstNode *root) const;
 	
-    // height() returns the height of the bst. Note height of an empty bst is -1
+    // height() returns the height of the bst. Note height of an empty bst is -1.
+    // the height of a one node tree is 0
     int height(bstNode *root) const;
 	
     //outputPreOrder() stores the result of a preorder traversal in the vector output
