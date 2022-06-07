@@ -12,7 +12,6 @@ int getTest();
 // and does some simple tests of tree methods
 int main() {
     vector<int> v {64, 128, 8, 512, 256, 32, 16, 4};
-
     bst bst1 {v};
   
     // let user choose one or all tests

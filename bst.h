@@ -28,6 +28,7 @@ class bst {
     void outputPreOrder(vector<int>& output) const {return outputPreOrder(root, output);};
     void outputInOrder(vector<int>& output) const {return outputInOrder(root, output);};
     bool insert(int key);
+    
 
     // TO DO: IMPLEMENT THE FOLLOWING PUBLIC AND PRIVATE METHODS:
     
@@ -69,7 +70,7 @@ class bst {
     
    
     //Add any new helper methods here
-
+    void clear(bstNode* n);
 };
 
 #endif
