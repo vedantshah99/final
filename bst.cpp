@@ -98,6 +98,9 @@ int bst::countParentsWithTwoChildren(bstNode *n) const{
 }
 
 int bst::height(bstNode *n) const{
+    if(!root){
+        return -1;
+    }
     if(!n){
         return 0;
     }
@@ -115,6 +118,7 @@ void bst::outputPreOrder(bstNode *n, vector<int>& output) const{
     outputPreOrder(n->left, output);
     outputPreOrder(n->right, output);
 }
+
 void bst::outputInOrder(bstNode *n, vector<int>& output) const{
     if(!n){
         return;
